@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,500&family=Herr+Von+Muellerhoff&family=Prompt:ital,wght@1,500&display=swap");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+section,
+span,
+p {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-image: url(IMG/poker-1564042.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo {
+    color: #272a2c;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+ul {
+    display: flex;
+}
+li {
+    margin-left: 27px;
+}
+
+a {
+    color: #272a2c;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    color: #333333;
+}
+h1 {
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: "Herr Von Muellerhoff", cursive;
+}
+
+.first-letter {
+    font-size: 10.3rem;
+    font-family: "Herr Von Muellerhoff", cursive;
+    color: #333333;
+}
+
+h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.btn-casino {
+    display: block;
+    background-color: #384146;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.btn-casino::after {
+    content: "BET";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #272a2c;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.btn-casino:hover::after {
+    top: 0;
+}
+
+/*About Start*/
+
+.about {
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin: 60px 0;
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #332e2e;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-title h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #332e2e;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 40%;
+}
+
+h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 60px;
+    color: #272a2c;
+    font-family: "Herr Von Muellerhoff", cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+}
+
+#asteriks {
+    color: #332e2e;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 18px;
+    text-align: center;
+    color: #272a2c;
+}
+
+/*portfolio*/
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.9s ease-out;
+    -webkit-transition: 0.9s ease-out;
+    -moz-transition: 0.9s ease-out;
+    -ms-transition: 0.9s ease-out;
+    -o-transition: 0.9s ease-out;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #384146;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: #ffffff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+}
+
+.portfolio-item:hover .overlay {
+    top: 0;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*Contact*/
+
+.contact {
+    padding: 10px 0;
+}
+
+.contact h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #332e2e;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #332e2e;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+}
+
+.contact-item .icons {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #332e2e;
+}
+
+.contact-item p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.footer {
+    background-color: #000;
+}
+
+.footer h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #fffafa;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #332e2e;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-copyright {
+    color: #fff;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 3;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icons2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+#menu-toggle {
+    font-size: 25px;
+    display: none;
+    margin-left: 25px;
+}
+
+/*header için Mobil*/
+
+@media only screen and (max-width: 800px) {
+    .header-menu ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #384146;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        -webkit-transition: max-height 0.5s ease-out;
+        -moz-transition: max-height 0.5s ease-out;
+        -ms-transition: max-height 0.5s ease-out;
+        -o-transition: max-height 0.5s ease-out;
+    }
+
+    .header-menu ul li {
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .header-menu ul li a {
+        color: #fff;
+    }
+
+    #menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*About için Responsive*/
+@media only screen and (max-width: 990px) {
+    .about-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+/*Porfolio için Responsive*/
+@media only screen and (max-width: 990px) {
+    .portfolio .portfolio-item {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .portfolio .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .portfolio .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        margin-top: 30px;
+    }
+
+    .contact-item p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
